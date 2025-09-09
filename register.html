@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Account - EduPlatform</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span>EduPlatform</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html" class="active">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Join Our Learning Community</h1>
+      <p class="subtitle">Create an account to access premium educational resources and personalized learning.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="form-container">
+      <h2>Create Your Account</h2>
+      <p class="subtitle">Fields marked with <span class="req"></span> are required.</p>
+      
+      <form class="form" novalidate>
+        <div class="field">
+          <label for="full-name" class="req">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required aria-required="true" placeholder="Enter your full name">
+          <span class="error-message" id="full-name-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="email" class="req">Email</label>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email">
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="password" class="req">Password</label>
+          <input type="password" id="password" name="password" required aria-required="true" minlength="8" placeholder="Enter your password">
+          <small class="hint">Use 8+ characters with numbers, letters, and symbols for strength.</small>
+          <div class="strength-meter">
+            <div id="strength-bar" class="strength-bar"></div>
+            <span id="strength-text" class="strength-text"></span>
+          </div>
+          <span class="error-message" id="password-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="confirm-password" class="req">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required aria-required="true" placeholder="Confirm your password">
+          <span class="error-message" id="confirm-password-error"></span>
+        </div>
+
+        <div class="field">
+          <label>
+            <input type="checkbox" name="terms" required aria-required="true">
+            I agree to the <a href="#terms" class="link">Terms of Service</a> and <a href="#privacy" class="link">Privacy Policy</a>
+          </label>
+          <span class="error-message" id="terms-error"></span>
+        </div>
+
+        <button type="submit" id="submit-btn">Create Account</button>
+      </form>
+
+      <p class="note">Already have an account? <a href="#login" class="link">Log in</a></p>
+      <p class="note">Prototype only — submission is intercepted for demo.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span>EduPlatform</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:support@eduplatform.com" class="link">support@eduplatform.com</a>
+        <a href="#facebook" class="link">Facebook</a>
+        <a href="#twitter" class="link">Twitter</a>
+        <a href="#linkedin" class="link">LinkedIn</a>
+      </div>
+      <p>&copy; 2025 EduPlatform. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.querySelector('form');
+    const submitBtn = document.getElementById('submit-btn');
+    const passwordInput = document.getElementById('password');
+    const strengthBar = document.getElementById('strength-bar');
+    const strengthText = document.getElementById('strength-text');
+
+    // Password strength meter
+    passwordInput.addEventListener('input', () => {
+      const password = passwordInput.value;
+      let strength = 0;
+      if (password.length >= 8) strength += 25;
+      if (/[A-Z]/.test(password)) strength += 25;
+      if (/[0-9]/.test(password)) strength += 25;
+      if (/[^A-Za-z0-9]/.test(password)) strength += 25;
+
+      strengthBar.style.width = `${strength}%`;
+      strengthBar.style.background = strength < 50 ? '#ef4444' : strength < 75 ? '#f59e0b' : '#10b981';
+      strengthText.textContent = strength < 50 ? 'Weak' : strength < 75 ? 'Moderate' : 'Strong';
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let isValid = true;
+
+      // Clear previous error messages
+      document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+
+      // Validate full name
+      const fullName = document.getElementById('full-name').value;
+      if (!fullName) {
+        document.getElementById('full-name-error').textContent = 'Full name is required';
+        isValid = false;
+      }
+
+      // Validate email
+      const email = document.getElementById('email').value;
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById('email-error').textContent = 'Please enter a valid email';
+        isValid = false;
+      }
+
+      // Validate password
+      const password = document.getElementById('password').value;
+      if (!password || password.length < 8 || !/(?=.*\d)(?=.*[a-zA-Z]).{8,}/.test(password)) {
+        document.getElementById('password-error').textContent = 'Password must be 8+ characters with numbers/letters';
+        isValid = false;
+      }
+
+      // Validate confirm password
+      const confirmPassword = document.getElementById('confirm-password').value;
+      if (password !== confirmPassword) {
+        document.getElementById('confirm-password-error').textContent = 'Passwords do not match';
+        isValid = false;
+      }
+
+      // Validate terms
+      const terms = document.querySelector('input[name="terms"]').checked;
+      if (!terms) {
+        document.getElementById('terms-error').textContent = 'You must agree to the terms';
+        isValid = false;
+      }
+
+      if (isValid) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+        setTimeout(() => {
+          alert('Form submitted (demo mode)!');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Create Account';
+          form.reset();
+          strengthBar.style.width = '0%';
+          strengthText.textContent = '';
+        }, 1000);
+      }
+    });
+  </script>
+</body>
+</html>
