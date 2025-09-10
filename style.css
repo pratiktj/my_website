@@ -86,3 +86,10 @@ footer.note{margin-top:12px;color:var(--muted);font-size:.95rem}
   input,textarea{background:#0e1426;color:#e5e7eb;border-color:#26324a}
   .subtitle, .hint, footer.note{color:#93a1b5}
 }
+.hero h1 {
+  color: #fff;
+}
+.footer-links a {
+  color: #fff;
+}
+
