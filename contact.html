@@ -3,124 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - EduPlatform</title>
+  <title>EduConsult - Contact Us</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo">
-      <span>EduPlatform</span>
-    </div>
+  <header>
     <nav>
       <a href="index.html">Home</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="register.html">Register</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="colleges.html">Colleges</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Get in Touch</h1>
-      <p class="subtitle">We're here to help with any questions about our educational platform.</p>
-    </div>
-  </section>
-
   <main>
-    <div class="form-container">
-      <h2>Contact Us</h2>
+    <section>
+      <h2>📞 Contact Us</h2>
+      <p>Have questions about admissions? We’re here to help.</p>
+      <p>📧 Email: Your email</p>
+      <p>💬 WhatsApp: <a href="Your WhatsApp link" class="footer-links">Your WhatsApp link</a></p>
+      <p>👉 Fill out the form below and we’ll get back to you within 24 hours.</p>
       <p class="subtitle">Fields marked with <span class="req"></span> are required.</p>
-      
-      <form class="form" novalidate>
+      <form class="form">
         <div class="field">
-          <label for="full-name" class="req">Full Name</label>
-          <input type="text" id="full-name" name="full-name" required aria-required="true" placeholder="Enter your full name">
-          <span class="error-message" id="full-name-error"></span>
+          <label for="name" class="req">Full Name</label>
+          <input type="text" id="name" required>
         </div>
-
         <div class="field">
           <label for="email" class="req">Email</label>
-          <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email">
+          <input type="email" id="email" required>
           <small class="hint">Use a valid email so we can reply.</small>
-          <span class="error-message" id="email-error"></span>
         </div>
-
         <div class="field">
           <label for="phone">Phone (optional)</label>
-          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          <input type="tel" id="phone">
         </div>
-
         <div class="field">
           <label for="message" class="req">Message</label>
-          <textarea id="message" name="message" required aria-required="true" placeholder="Enter your message"></textarea>
-          <span class="error-message" id="message-error"></span>
+          <textarea id="message" required></textarea>
         </div>
-
-        <button type="submit" id="submit-btn">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
-
-      <p class="note">Prototype only — submission is intercepted for demo.</p>
-    </div>
+      <footer class="note">Prototype only — submission is intercepted for demo.</footer>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <span>EduPlatform</span>
-      </div>
-      <div class="footer-links">
-        <a href="mailto:support@eduplatform.com" class="link">support@eduplatform.com</a>
-        <a href="#facebook" class="link">Facebook</a>
-        <a href="#twitter" class="link">Twitter</a>
-        <a href="#linkedin" class="link">LinkedIn</a>
-      </div>
-      <p>&copy; 2025 EduPlatform. All rights reserved.</p>
+  <footer>
+    <div>
+      <strong>EduConsult</strong>
     </div>
+    <div>
+      <a href="mailto:support@educonsult.com">support@educonsult.com</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <div>© 2025 EduConsult. All rights reserved.</div>
   </footer>
 
-  <script>
-    const form = document.querySelector('form');
-    const submitBtn = document.getElementById('submit-btn');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      let isValid = true;
-
-      // Clear previous error messages
-      document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
-
-      // Validate full name
-      const fullName = document.getElementById('full-name').value;
-      if (!fullName) {
-        document.getElementById('full-name-error').textContent = 'Full name is required';
-        isValid = false;
-      }
-
-      // Validate email
-      const email = document.getElementById('email').value;
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        document.getElementById('email-error').textContent = 'Please enter a valid email';
-        isValid = false;
-      }
-
-      // Validate message
-      const message = document.getElementById('message').value;
-      if (!message) {
-        document.getElementById('message-error').textContent = 'Message is required';
-        isValid = false;
-      }
-
-      if (isValid) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Submitting...';
-        setTimeout(() => {
-          alert('Message sent (demo mode)!');
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Send Message';
-          form.reset();
-        }, 1000);
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
