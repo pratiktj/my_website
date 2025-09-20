@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EduConsult - Colleges in Kolkata</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
   <header>
@@ -19,17 +20,56 @@
     </nav>
   </header>
 
+  <section class="page-hero">
+    <div class="inner">
+      <h1>Colleges in Kolkata</h1>
+      <p>Explore top PG options in Engineering, MBA, and Law with transparent comparisons.</p>
+    </div>
+  </section>
+
   <main>
-    <section>
-      <h2>Colleges in Kolkata</h2>
-      <p>Kolkata is home to some of India’s most reputed postgraduate institutions. Here’s a snapshot of leading colleges in MBA, Law, and Engineering:</p>
-      <ul>
-        <li><strong>Engineering (PG) Colleges:</strong> Adamas University, Techno India University, etc.</li>
-        <li><strong>MBA Colleges:</strong> Adamas University, Globsyn Business School, etc.</li>
-        <li><strong>Law Colleges:</strong> NUJS Kolkata, etc.</li>
-      </ul>
-      <p>👉 Detailed guides on each college, eligibility, and application process will be available in our <a href="blog.html">Blog Section</a>.</p>
+    <section aria-label="Search Colleges">
+      <h2>Search Colleges and Degrees</h2>
+      <form id="collegesSearch" class="search-bar" style="max-width: 900px;">
+        <input type="text" id="collegeQuery" placeholder="Search by college name or keyword" aria-label="Search colleges">
+        <select id="degreeFilter" aria-label="Degree filter">
+          <option value="">All Degrees</option>
+          <option value="mba">MBA</option>
+          <option value="mtech">M.Tech</option>
+          <option value="llm">LLM</option>
+        </select>
+        <button type="submit" class="btn-primary"><i class="fas fa-magnifying-glass"></i> Search</button>
+      </form>
+
+      <div id="collegeResults" class="college-grid" aria-live="polite">
+        <article class="college-card" data-name="Heritage Institute of Technology" data-degrees="mtech">
+          <h3>Heritage Institute of Technology (HIT)</h3>
+          <p>Popular degrees: M.Tech</p>
+        </article>
+        <article class="college-card" data-name="Techno India University" data-degrees="mtech mba">
+          <h3>Techno India University (TIU)</h3>
+          <p>Popular degrees: MBA, M.Tech</p>
+        </article>
+        <article class="college-card" data-name="UEM University of Engineering and Management" data-degrees="mtech">
+          <h3>University of Engineering & Management (UEM)</h3>
+          <p>Popular degrees: M.Tech</p>
+        </article>
+        <article class="college-card" data-name="Adamas University" data-degrees="mba llm mtech">
+          <h3>Adamas University</h3>
+          <p>Popular degrees: MBA, LLM, M.Tech</p>
+        </article>
+        <article class="college-card" data-name="Amity University Kolkata" data-degrees="mba mtech">
+          <h3>Amity University, Kolkata</h3>
+          <p>Popular degrees: MBA, M.Tech</p>
+        </article>
+        <article class="college-card" data-name="NUJS Kolkata" data-degrees="llm">
+          <h3>NUJS Kolkata</h3>
+          <p>Popular degrees: LLM</p>
+        </article>
+      </div>
+      <p id="collegeEmptyState" class="subtitle" style="display:none;">No colleges match your search.</p>
     </section>
+    
   </main>
 
   <footer>

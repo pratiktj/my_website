@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConsult - Testimonials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="colleges.html">Colleges</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Student Stories / Testimonials</h2>
+      <p>We are proud to have guided students who are now pursuing postgraduate studies at top institutions.</p>
+      <blockquote>
+        <p>“With their guidance, I was able to shortlist the right MBA colleges and successfully secure admission. Highly recommended!”</p>
+        <cite>– Student, MBA 2024 Intake</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>EduConsult</strong>
+    </div>
+    <div>
+      <a href="mailto:support@educonsult.com">support@educonsult.com</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <div>© 2025 EduConsult. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConsult - Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="colleges.html">Colleges</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Blog / Resources</h2>
+      <p>Our resource hub brings you the latest admission updates, exam tips, and expert insights on postgraduate education in Kolkata.</p>
+      <h3>Top Private Engineering Colleges in Kolkata – Admissions 2025</h3>
+      <p>Choosing the right college is the first and most important step towards building a successful career in engineering. While public institutions like Jadavpur University and IIEST Shibpur are highly competitive, many students and parents today prefer private and deemed-to-be universities in Kolkata because of their modern infrastructure, industry partnerships, flexible programs, and strong placement records.</p>
+      <p>If you are planning for B.Tech admission in Kolkata (2025), here’s a guide to the top private engineering universities and colleges you should consider.</p>
+      <div class="college-list">
+        <div class="college-item">
+          <h4>🎓 1. Heritage Institute of Technology (HIT Kolkata)</h4>
+          <p><strong>Overview:</strong> Affiliated to MAKAUT, one of the most sought-after private engineering colleges in Kolkata.</p>
+          <p><strong>Courses Offered:</strong> B.Tech in CSE, IT, ECE, EE, ME, CE, Biotechnology, Applied Electronics.</p>
+          <p><strong>Admission Process:</strong> WBJEE and JEE Main; limited management quota seats available.</p>
+          <p><strong>Fees (approx):</strong> ₹1.2–1.5 lakhs per year.</p>
+          <p><strong>Placements:</strong> Strong industry tie-ups with TCS, Cognizant, Infosys, Deloitte. Average package ₹4–6 LPA; top packages ₹30+ LPA.</p>
+          <p><strong>Why Choose:</strong> Excellent academic reputation + consistently high placement rates.</p>
+        </div>
+        <div class="college-item">
+          <h4>🎓 2. Techno India University (TIU), Salt Lake</h4>
+          <p><strong>Overview:</strong> Deemed-to-be university under the Techno India Group, one of the largest education networks in Eastern India.</p>
+          <p><strong>Courses Offered:</strong> B.Tech in CSE, AI & ML, Robotics, ECE, Mechanical, Civil, IT, Data Science, and more.</p>
+          <p><strong>Admission Process:</strong> WBJEE, JEE Main, and direct university admission.</p>
+          <p><strong>Fees (approx):</strong> ₹1.5–2 lakhs per year.</p>
+          <p><strong>Placements:</strong> Average package ₹3–5 LPA; top placements above ₹15 LPA in IT/CSE.</p>
+          <p><strong>Why Choose:</strong> Wide range of courses + modern campus + strong alumni base.</p>
+        </div>
+        <div class="college-item">
+          <h4>🎓 3. University of Engineering & Management (UEM), Kolkata</h4>
+          <p><strong>Overview:</strong> UEM is a UGC-recognized private university, part of the IEM group, known for its focus on innovation and entrepreneurship.</p>
+          <p><strong>Courses Offered:</strong> B.Tech in CSE, AI, Data Science, Robotics, Civil, Mechanical, EE, ECE.</p>
+          <p><strong>Admission Process:</strong> IEMJEE, WBJEE.</p>
+          <p><strong>Fees (approx):</strong> ₹1.5–2 lakhs per year.</p>
+          <p><strong>Placements:</strong> Average package ₹4–5 LPA, with top companies like TCS, Wipro, Capgemini, Amazon.</p>
+          <p><strong>Why Choose:</strong> Emphasis on emerging tech + strong entrepreneurship cell.</p>
+        </div>
+        <div class="college-item">
+          <h4>🎓 4. Adamas University, Barasat</h4>
+          <p><strong>Overview:</strong> A fast-growing private university with focus on multidisciplinary education.</p>
+          <p><strong>Courses Offered:</strong> B.Tech in CSE, Civil, Mechanical, ECE, Electrical, Biotechnology.</p>
+          <p><strong>Admission Process:</strong> Through university’s own admission test (AUAT), WBJEE, or JEE Main.</p>
+          <p><strong>Fees (approx):</strong> ₹1.2–1.8 lakhs per year.</p>
+          <p><strong>Placements:</strong> Average ₹3–4 LPA, growing industry connect.</p>
+          <p><strong>Why Choose:</strong> Modern campus + industry-driven learning.</p>
+        </div>
+        <div class="college-item">
+          <h4>🎓 5. Amity University, Kolkata</h4>
+          <p><strong>Overview:</strong> Part of the Amity Group, one of India’s largest private education networks.</p>
+          <p><strong>Courses Offered:</strong> B.Tech in CSE, AI, Data Science, IT, ECE, Civil, Mechanical, and other streams.</p>
+          <p><strong>Admission Process:</strong> Direct admission based on 10+2 marks, JEE Main, or Amity’s admission test.</p>
+          <p><strong>Fees (approx):</strong> ₹2–3 lakhs per year.</p>
+          <p><strong>Placements:</strong> Average package ₹4–5 LPA; recruiters include IBM, TCS, Infosys, Accenture.</p>
+          <p><strong>Why Choose:</strong> Global exposure, industry tie-ups, and brand value.</p>
+        </div>
+      </div>
+      <h3>📌 Engineering Admission Process (Private Universities, Kolkata)</h3>
+      <ol>
+        <li>Appear for WBJEE 2025 and/or JEE Main 2025.</li>
+        <li>Apply directly to the universities of your choice (Techno, UEM, Adamas, Amity, Heritage).</li>
+        <li>Some universities (like UEM & Adamas) conduct their own entrance tests.</li>
+        <li>Students can also secure admission through management quota (direct admission) in select cases.</li>
+      </ol>
+      <h3>✅ Why Choose a Private University in Kolkata?</h3>
+      <ul>
+        <li>✔️ Modern infrastructure and global-standard campuses</li>
+        <li>✔️ New-age specializations (AI, Robotics, Data Science, Cybersecurity)</li>
+        <li>✔️ Strong industry tie-ups and placement assistance</li>
+        <li>✔️ Flexibility in admission – multiple exams + direct entry options</li>
+        <li>✔️ Exposure to research, innovation, and entrepreneurship</li>
+      </ul>
+      <h3>🚀 How We Can Help</h3>
+      <p>Navigating the admission process can be confusing for both students and parents. At EduConsult, we provide complete assistance for engineering admissions in private universities in Kolkata. From counseling and application support to securing seats through WBJEE/JEE or direct admission, we ensure a smooth journey towards your child’s dream career.</p>
+      <p><a href="contact.html">👉 Contact us today for personalized guidance on Engineering Admissions 2025.</a></p>
+      <h3>📊 Comparison of Top Private Engineering Colleges in Kolkata (2025 Admissions)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>University/College</th>
+            <th>Popular B.Tech Courses</th>
+            <th>Admission Process</th>
+            <th>Fees (per year, approx.)</th>
+            <th>Placement Highlights</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Heritage Institute of Technology (HIT)</td>
+            <td>CSE, IT, ECE, EE, ME, CE, Biotech</td>
+            <td>WBJEE, JEE Main, Management Quota</td>
+            <td>₹1.2–1.5 lakhs</td>
+            <td>Avg: ₹4–6 LPA; Top: ₹30+ LPA</td>
+          </tr>
+          <tr>
+            <td>Techno India University (TIU)</td>
+            <td>CSE, AI & ML, Robotics, IT, Mech, Civil</td>
+            <td>WBJEE, JEE Main, Direct Admission</td>
+            <td>₹1.5–2 lakhs</td>
+            <td>Avg: ₹3–5 LPA; Top: ₹15+ LPA</td>
+          </tr>
+          <tr>
+            <td>University of Engineering & Management (UEM)</td>
+            <td>CSE, AI, Data Science, Robotics, EE, Mech</td>
+            <td>IEMJEE, WBJEE</td>
+            <td>₹1.5–2 lakhs</td>
+            <td>Avg: ₹4–5 LPA; Amazon, TCS, Wipro</td>
+          </tr>
+          <tr>
+            <td>Adamas University</td>
+            <td>CSE, Civil, Mech, ECE, Biotech</td>
+            <td>AUAT, WBJEE, JEE Main</td>
+            <td>₹1.2–1.8 lakhs</td>
+            <td>Avg: ₹3–4 LPA; Growing corporate tie-ups</td>
+          </tr>
+          <tr>
+            <td>Amity University, Kolkata</td>
+            <td>CSE, AI, Cybersecurity, IT, Civil, Mech</td>
+            <td>JEE Main, Amity Test, Direct Admission</td>
+            <td>₹2–3 lakhs</td>
+            <td>Avg: ₹4–5 LPA; IBM, Infosys, Accenture</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Sample Blog Titles:</strong></p>
+      <ul>
+        <li>Top MBA Colleges in Kolkata – Admissions 2025</li>
+        <li>Best Law Colleges in Calcutta: Admission Process & Fees</li>
+        <li>How to Prepare for PG Engineering Admissions in Kolkata</li>
+        <li>MBA vs Law – Which Path is Right for You?</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>EduConsult</strong>
+    </div>
+    <div>
+      <a href="mailto:support@educonsult.com">support@educonsult.com</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <div>© 2025 EduConsult. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

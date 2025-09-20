@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConsult - Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="colleges.html">Colleges</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <h3>Postgraduate Admission Guidance</h3>
+          <p>Helping students identify the right college and course based on their profile and career goals.</p>
+        </div>
+        <div class="service-item">
+          <h3>Application Support</h3>
+          <p>Assistance with filling out forms, preparing SOPs, and ensuring deadlines are met.</p>
+        </div>
+        <div class="service-item">
+          <h3>Exam Preparation Guidance</h3>
+          <p>Insights and resources for exams like CAT, CLAT PG, GATE, and university-specific tests.</p>
+        </div>
+        <div class="service-item">
+          <h3>College Shortlisting</h3>
+          <p>Detailed comparison of fees, placements, eligibility, and admission timelines for Kolkata’s top colleges.</p>
+        </div>
+        <div class="service-item">
+          <h3>Counseling & Mentorship</h3>
+          <p>Personalized sessions to help students and parents make informed choices.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>EduConsult</strong>
+    </div>
+    <div>
+      <a href="mailto:support@educonsult.com">support@educonsult.com</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <div>© 2025 EduConsult. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

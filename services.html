@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EduConsult - Services</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
   <header>
@@ -19,29 +20,102 @@
     </nav>
   </header>
 
+  <section class="page-hero">
+    <div class="inner">
+      <h1>Our Services</h1>
+      <p>End‑to‑end PG admissions support for Engineering, MBA, and Law.</p>
+    </div>
+  </section>
+
   <main>
+    <!-- Services Grid -->
     <section>
-      <h2>Our Services</h2>
-      <div class="service-grid">
-        <div class="service-item">
-          <h3>Postgraduate Admission Guidance</h3>
-          <p>Helping students identify the right college and course based on their profile and career goals.</p>
-        </div>
-        <div class="service-item">
+      <h2>What We Offer</h2>
+      <div class="svc-grid">
+        <article class="svc-card">
+          <div class="svc-icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Admission Guidance</h3>
+          <ul class="svc-points">
+            <li>Profile evaluation and goal mapping</li>
+            <li>Program and college recommendations</li>
+            <li>Timeline planning</li>
+          </ul>
+          <button class="btn-secondary" onclick="window.location.href='contact.html'">Talk to a Counselor</button>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon"><i class="fas fa-file-pen"></i></div>
           <h3>Application Support</h3>
-          <p>Assistance with filling out forms, preparing SOPs, and ensuring deadlines are met.</p>
-        </div>
-        <div class="service-item">
-          <h3>Exam Preparation Guidance</h3>
-          <p>Insights and resources for exams like CAT, CLAT PG, GATE, and university-specific tests.</p>
-        </div>
-        <div class="service-item">
-          <h3>College Shortlisting</h3>
-          <p>Detailed comparison of fees, placements, eligibility, and admission timelines for Kolkata’s top colleges.</p>
-        </div>
-        <div class="service-item">
-          <h3>Counseling & Mentorship</h3>
-          <p>Personalized sessions to help students and parents make informed choices.</p>
+          <ul class="svc-points">
+            <li>SOP/Essay brainstorming and edits</li>
+            <li>Form filling and documentation</li>
+            <li>Deadline tracking</li>
+          </ul>
+          <button class="btn-secondary" onclick="window.location.href='contact.html'">Start Your Application</button>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon"><i class="fas fa-list-check"></i></div>
+          <h3>Shortlisting & Comparisons</h3>
+          <ul class="svc-points">
+            <li>Fees, placements, eligibility</li>
+            <li>Intake deadlines and requirements</li>
+            <li>Scholarship guidance</li>
+          </ul>
+          <button class="btn-secondary" onclick="window.location.href='contact.html'">Get Your Shortlist</button>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon"><i class="fas fa-pen-to-square"></i></div>
+          <h3>Exam & Interview Prep</h3>
+          <ul class="svc-points">
+            <li>CAT, CLAT PG, GATE pointers</li>
+            <li>Mock interviews and feedback</li>
+            <li>Final review checklists</li>
+          </ul>
+          <button class="btn-secondary" onclick="window.location.href='contact.html'">Book a Mock</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+      <h2>How Our Process Works</h2>
+      <div class="process-steps">
+        <div class="step"><span>1</span><div><strong>Discovery Call</strong><p>Understand your goals, background, and constraints.</p></div></div>
+        <div class="step"><span>2</span><div><strong>Shortlist & Plan</strong><p>Curated options with timelines and requirements.</p></div></div>
+        <div class="step"><span>3</span><div><strong>Application Build</strong><p>SOP/essays, documents, and forms—polished and complete.</p></div></div>
+        <div class="step"><span>4</span><div><strong>Prep & Submit</strong><p>Mock interviews, last checks, and on-time submissions.</p></div></div>
+        <div class="step"><span>5</span><div><strong>Admit & Next Steps</strong><p>Offer reviews, scholarship advice, and onboarding.</p></div></div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faq-section">
+      <h2>FAQs</h2>
+      <details>
+        <summary>Do you guarantee admission?</summary>
+        <p>No promises—only transparent, data-driven guidance to maximize your chances.</p>
+      </details>
+      <details>
+        <summary>Can you help with scholarships?</summary>
+        <p>Yes, we highlight scholarship options during shortlisting and application review.</p>
+      </details>
+      <details>
+        <summary>Do you work with colleges outside Kolkata?</summary>
+        <p>Yes, we cover top options across India and select global programs.</p>
+      </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="cta-container">
+        <h2>Ready to get personalized guidance?</h2>
+        <p>Book a free consultation and receive a tailored shortlist within 48 hours.</p>
+        <div class="cta-actions">
+          <button class="btn-primary" onclick="window.location.href='contact.html'">
+            <i class="fas fa-comments"></i> Book Free Consultation
+          </button>
+          <button class="btn-secondary" onclick="window.location.href='register.html'">
+            <i class="fas fa-user-plus"></i> Create Free Account
+          </button>
         </div>
       </div>
     </section>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Register — Project Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <h1>Create your account</h1>
+    <p class="subtitle">Fields marked with * are required.</p>
+
+    <form id="register-form" class="form" action="#" method="post" novalidate>
+      <div class="field">
+        <label class="req" for="fullName">Full name</label>
+        <input id="fullName" name="fullName" type="text" required autocomplete="name" placeholder="e.g., Rahul Sharma">
+      </div>
+
+      <div class="field">
+        <label class="req" for="regEmail">Email</label>
+        <input id="regEmail" name="email" type="email" required autocomplete="email" placeholder="name@example.com">
+      </div>
+
+      <div class="field">
+        <label class="req" for="password">Password</label>
+        <input id="password" name="password" type="password" required minlength="8" aria-describedby="pwdHelp" placeholder="At least 8 characters">
+        <small id="pwdHelp" class="hint">Use 8+ characters; add numbers/symbols for strength.</small>
+      </div>
+
+      <div class="field">
+        <label class="req" for="confirm">Confirm password</label>
+        <input id="confirm" name="confirm" type="password" required placeholder="Re-enter password">
+      </div>
+
+      <div class="field">
+        <label><input id="terms" name="terms" type="checkbox" required> I agree to the Terms</label>
+      </div>
+
+      <button type="submit">Create account</button>
+    </form>
+
+    <footer class="note">Prototype only — submission is intercepted for demo.</footer>
+  </main>
+
+  <script>
+    document.getElementById('register-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const form = e.target;
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      const pwd = document.getElementById('password').value;
+      const confirm = document.getElementById('confirm').value;
+      if (pwd !== confirm) { alert('Passwords do not match.'); return; }
+      alert('Registered! This is a prototype — no account created.');
+    });
+  </script>
+</body>
+</html>

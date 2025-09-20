@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us — Project Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <h1>Contact Us</h1>
+    <p class="subtitle">Fields marked with * are required.</p>
+
+    <form id="contact-form" class="form" action="#" method="post" novalidate>
+      <div class="field">
+        <label class="req" for="name">Full name</label>
+        <input id="name" name="name" type="text" required autocomplete="name" placeholder="e.g., Rahul Sharma">
+      </div>
+
+      <div class="field">
+        <label class="req" for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@example.com" aria-describedby="emailHelp">
+        <small id="emailHelp" class="hint">Use a valid email so we can reply.</small>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone (optional)</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210">
+      </div>
+
+      <div class="field">
+        <label class="req" for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="How can we help?"></textarea>
+      </div>
+
+      <button type="submit">Send message</button>
+    </form>
+
+    <footer class="note">Prototype only — submission is intercepted for demo.</footer>
+  </main>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!e.target.checkValidity()) { e.target.reportValidity(); return; }
+      alert('Thanks! This is a prototype — no data is sent.');
+    });
+  </script>
+</body>
+</html>

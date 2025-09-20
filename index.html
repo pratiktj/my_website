@@ -5,7 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EduConsult - Postgraduate Admissions</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
+<!-- Registration Reminder Popup -->
+<div id="registrationReminder" class="reminder-popup">
+  <div class="reminder-content">
+    <span class="close-btn" onclick="closeReminderPopup()">×</span>
+    <h3>Complete Your Free Registration</h3>
+    <p>Get personalized guidance and stay updated with top PG admissions info.</p>
+    <button onclick="window.location.href='register.html'">Register Now</button>
+  </div>
+</div>
+
 <body>
   <header>
     <nav>
@@ -23,14 +35,336 @@
     <div class="hero-content">
       <h1>Your Gateway to Postgraduate Success</h1>
       <p class="subtitle">Guiding students towards the right Engineering, MBA, and Law postgraduate courses with expert advice and trusted information.</p>
+
+      <!-- Search Programs Bar -->
+      <form class="search-bar" id="searchProgramsForm" aria-label="Search Programs">
+        <input type="text" id="searchQuery" name="q" placeholder="Search programs (e.g., MBA, Data Science, LLM)" aria-label="Search query">
+        <select id="searchCountry" name="country" aria-label="Country">
+          <option value="">Country</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>Canada</option>
+          <option>Australia</option>
+        </select>
+        <button type="submit" class="btn-primary"><i class="fas fa-magnifying-glass"></i> Search Programs</button>
+      </form>
       <h2>How We Help You Succeed</h2>
+
       <ul class="highlights">
-        <li>🎯 Personalized admission guidance for PG courses</li>
-        <li>🏛️ Insights on top colleges in India</li>
-        <li>✍️ Support with applications, essays, and entrance exams</li>
-        <li>✅ 100% transparent and student-first approach</li>
+        <li><i class="fas fa-bullseye"></i> Personalized admission guidance for PG courses</li>
+        <li><i class="fas fa-university"></i> Insights on top colleges in India</li>
+        <li><i class="fas fa-pen"></i> Support with applications, essays, and entrance exams</li>
+        <li><i class="fas fa-check-circle"></i> 100% transparent and student-first approach</li>
       </ul>
-      <button onclick="window.location.href='contact.html'">Book a Free Consultation Today</button>
+
+      <button class="btn-primary" onclick="window.location.href='contact.html'">Book a Free Consultation Today</button>
+    </div>
+  </section>
+
+  <!-- Services Overview (from Services page) -->
+  <section class="features-section" id="services-overview">
+    <div class="features-container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <h3>Admission Guidance</h3>
+          <p>Profile-based shortlisting and guidance to target the right PG programs.</p>
+        </div>
+        <div class="service-item">
+          <h3>Application Support</h3>
+          <p>Help with forms, SOPs, essays, and meeting timelines without stress.</p>
+        </div>
+        <div class="service-item">
+          <h3>Exam & Interview Prep</h3>
+          <p>Resources and mocks for CAT, CLAT PG, GATE and university-specific rounds.</p>
+        </div>
+        <div class="service-item">
+          <h3>College Comparisons</h3>
+          <p>Transparent comparisons on fees, placements, eligibility, and deadlines.</p>
+        </div>
+      </div>
+      <div style="margin-top:20px">
+        <button class="btn-secondary" onclick="window.location.href='services.html'">
+          View all services
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners/Universities Logos Strip -->
+  <section class="logos-strip" aria-label="Partner Universities">
+    <div class="logos-container">
+      <span class="logos-title">Trusted by students heading to</span>
+      <div class="logos-grid">
+        <div class="logo-box" aria-label="University logo"></div>
+        <div class="logo-box" aria-label="University logo"></div>
+        <div class="logo-box" aria-label="University logo"></div>
+        <div class="logo-box" aria-label="University logo"></div>
+        <div class="logo-box" aria-label="University logo"></div>
+        <div class="logo-box" aria-label="University logo"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Students Guided</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="stat-number">100+</div>
+        <div class="stat-label">Top Colleges</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="stat-number">95%</div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="features-container">
+      <h2>Why Choose EduConsult?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3>Expert Counselors</h3>
+          <p>Our team consists of experienced education counselors with deep knowledge of postgraduate admissions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Proven Track Record</h3>
+          <p>95% of our students get admitted to their preferred colleges with our comprehensive guidance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Personalized Support</h3>
+          <p>One-on-one counseling sessions tailored to your specific goals and academic background.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>100% Transparent</h3>
+          <p>No hidden fees, clear communication, and honest advice throughout your admission journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-section" id="how-it-works">
+    <div class="how-container">
+      <h2>How It Works</h2>
+      <div class="how-steps">
+        <div class="how-card">
+          <div class="how-icon"><i class="fas fa-search"></i></div>
+          <h3>1. Explore</h3>
+          <p>Discover PG programs that match your goals, budget, and eligibility.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-icon"><i class="fas fa-list-check"></i></div>
+          <h3>2. Shortlist</h3>
+          <p>Compare colleges and requirements with transparent insights.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-icon"><i class="fas fa-file-signature"></i></div>
+          <h3>3. Apply</h3>
+          <p>We help with SOPs, essays, applications, and exam prep.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-icon"><i class="fas fa-plane-departure"></i></div>
+          <h3>4. Admit</h3>
+          <p>Secure offers and get ready to start your postgraduate journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Programs Section -->
+  <section class="programs-section" id="popular-programs">
+    <div class="programs-container">
+      <h2>Popular Programs</h2>
+      <div class="programs-grid">
+        <article class="program-card">
+          <div class="program-media">
+            <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80" alt="MBA Program" loading="lazy">
+          </div>
+          <div class="program-body">
+            <h3>MBA</h3>
+            <p>Top-tier management programs with strong placement records.</p>
+            <button onclick="window.location.href='services.html'">Explore MBA</button>
+          </div>
+        </article>
+        <article class="program-card">
+          <div class="program-media">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="M.Tech Program" loading="lazy">
+          </div>
+          <div class="program-body">
+            <h3>M.Tech</h3>
+            <p>Advanced engineering specializations with research focus.</p>
+            <button onclick="window.location.href='services.html'">Explore M.Tech</button>
+          </div>
+        </article>
+        <article class="program-card">
+          <div class="program-media">
+            <img src="https://images.unsplash.com/photo-1453945619913-79ec89a82c51?auto=format&fit=crop&w=1200&q=80" alt="LLM Program" loading="lazy">
+          </div>
+          <div class="program-body">
+            <h3>LLM</h3>
+            <p>Specialized legal studies to accelerate your law career.</p>
+            <button onclick="window.location.href='services.html'">Explore LLM</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started-section" id="get-started">
+    <div class="get-started-container">
+      <div class="get-started-content">
+        <h2>Get Started in Minutes</h2>
+        <p class="subtitle">Create your free account and receive a personalized shortlist within 48 hours.</p>
+        <div class="get-started-steps">
+          <div class="gs-step"><span>1</span> Tell us about your background</div>
+          <div class="gs-step"><span>2</span> Get matched to programs</div>
+          <div class="gs-step"><span>3</span> Apply with expert guidance</div>
+        </div>
+        <div class="get-started-actions">
+          <button class="btn-primary" onclick="window.location.href='register.html'"><i class="fas fa-user-plus"></i> Create Free Account</button>
+          <button class="btn-secondary" onclick="window.location.href='contact.html'"><i class="fas fa-phone"></i> Talk to an Expert</button>
+        </div>
+      </div>
+      <div class="get-started-media">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80" alt="Students exploring programs">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-container">
+      <h2>Loved by Students</h2>
+      <div class="testimonial-slider ticker" aria-roledescription="carousel">
+        <button class="ts-control prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+        <div class="ts-track">
+          <article class="testimonial-card" aria-roledescription="slide">
+            <div class="t-head">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Student portrait">
+              <div>
+                <strong>Priya S.</strong>
+                <small>MBA, Bengaluru</small>
+              </div>
+            </div>
+            <p>EduConsult helped me shortlist the right B-schools and refine my SOP. I received two admits within a month!</p>
+          </article>
+          <article class="testimonial-card" aria-roledescription="slide">
+            <div class="t-head">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Student portrait">
+              <div>
+                <strong>Rohit M.</strong>
+                <small>MBA, Mumbai</small>
+              </div>
+            </div>
+            <p>Clear guidance on timelines and documentation. The application process felt easy and structured.</p>
+          </article>
+          <article class="testimonial-card" aria-roledescription="slide">
+            <div class="t-head">
+              <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Student portrait">
+              <div>
+                <strong>Neha D.</strong>
+                <small>M.Tech, Hyderabad</small>
+              </div>
+            </div>
+            <p>Their shortlist matched my budget and interests. I got admits from two great programs.</p>
+          </article>
+          <article class="testimonial-card" aria-roledescription="slide">
+            <div class="t-head">
+              <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Student portrait">
+              <div>
+                <strong>Vikas P.</strong>
+                <small>LLM, Kolkata</small>
+              </div>
+            </div>
+            <p>Excellent SOP edits and interview prep. Loved the transparent approach.</p>
+          </article>
+          <article class="testimonial-card" aria-roledescription="slide">
+            <div class="t-head">
+              <img src="https://randomuser.me/api/portraits/women/61.jpg" alt="Student portrait">
+              <div>
+                <strong>Kriti S.</strong>
+                <small>MBA, Delhi</small>
+              </div>
+            </div>
+            <p>Fast responses and practical advice at every step. Definitely recommend to friends.</p>
+          </article>
+          <article class="testimonial-card" aria-roledescription="slide">
+            <div class="t-head">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Student portrait">
+              <div>
+                <strong>Arjun K.</strong>
+                <small>M.Tech, Pune</small>
+              </div>
+            </div>
+            <p>The counselling was transparent and effective. Their mock interviews made a huge difference.</p>
+          </article>
+          <article class="testimonial-card" aria-roledescription="slide">
+            <div class="t-head">
+              <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Student portrait">
+              <div>
+                <strong>Ananya R.</strong>
+                <small>LLM, Delhi</small>
+              </div>
+            </div>
+            <p>From applications to essays—everything was guided step-by-step. Highly recommend!</p>
+          </article>
+        </div>
+        <button class="ts-control next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="ts-dots" aria-label="Testimonial navigation"></div>
+    </div>
+  </section>
+
+  <!-- Call To Action Banner -->
+  <section class="cta-banner">
+    <div class="cta-container">
+      <h2>Ready to find your perfect postgraduate program?</h2>
+      <p>Get a free consultation and a tailored shortlist within 48 hours.</p>
+      <div class="cta-actions">
+        <button class="btn-primary" onclick="window.location.href='contact.html'">
+          <i class="fas fa-comments"></i> Book Free Consultation
+        </button>
+        <button class="btn-secondary" onclick="window.location.href='register.html'">
+          <i class="fas fa-user-plus"></i> Create Free Account
+        </button>
+      </div>
     </div>
   </section>
 
@@ -39,10 +373,10 @@
       <strong>EduConsult</strong>
     </div>
     <div>
-      <a href="mailto:support@educonsult.com">support@educonsult.com</a>
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
+      <a href="mailto:support@educonsult.com"><i class="fas fa-envelope"></i> support@educonsult.com</a>
+      <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
     </div>
     <div>© 2025 EduConsult. All rights reserved.</div>
   </footer>

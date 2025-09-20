@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConsult - About Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="colleges.html">Colleges</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Who We Are</h2>
+      <p>At EduConsult, we specialize in helping students and parents navigate the competitive postgraduate admissions process. Whether it is an Engineering, MBA, or Law postgraduate course, our goal is to simplify the journey, provide reliable information, and guide you toward the right choice.</p>
+      <h3>Our Mission</h3>
+      <p>To empower students with the right knowledge, mentorship, and tools for successful admissions.</p>
+      <h3>Why Choose Us</h3>
+      <ul>
+        <li>Deep understanding of top institutions</li>
+        <li>Personalized counseling and one-to-one sessions</li>
+        <li>Ethical and transparent guidance</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>EduConsult</strong>
+    </div>
+    <div>
+      <a href="mailto:support@educonsult.com">support@educonsult.com</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <div>© 2025 EduConsult. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
